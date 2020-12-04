@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+  transition: background-image 1s ease-in-out;
+}
+
+.time {
+  font-size: 8rem;
+}
+
+.date {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+.focus {
+  min-width: 160px;
+  padding: 4px;
+}
+
+.focus:focus {
+  transition: outline 5s;
+}
+
+.name {
+  min-width: 20px;
+  display: inline-block;
+  padding: 4px;
+}
+
+.name:focus {
+  transition: outline 5s;
+}
+
+input,
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  text-shadow: 0 0 2px #000;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: transform 1s;
+}
+
+.nextImgButton {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 699px) {
+  body {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .time {
+    font-size: 3rem;
+  }
+
+  .date {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+/* QUOTE START */
+
+.quote__text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+  font: 1.3rem;
+  margin: 1 rem;
+  background: rgba(107, 107, 107, 0.6);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.quote__text figcaption,
+.quote__text blockquote {
+  width: 100%;
+  /* margin: 1rem; */
+}
+.quote__text figcaption {
+  margin: 0.2rem;
+  text-align: center;
+}
+.quote__btn {
+  font-size: 0.9rem;
+  align-self: flex-end;
+}
+.quote__btn:hover {
+}
+.quote__btn:active,
+.quote__btn:focus {
+  outline: 0;
+}
+
+@media (min-width: 700px) {
+  .quote__text {
+    height: 130px;
+  }
+}
+
+@media (max-width: 700px) {
+  .quote__text {
+    padding: 0.5rem;
+    /* min-height: 200px; */
+    width: 90%;
+  }
+
+  .quote__text figcaption,
+  .quote__text blockquote {
+    margin: 0.2rem;
+  }
+
+  .quote__btn {
+    margin: 0.2rem;
+    width: 90%;
+    text-align: right;
+  }
+}
+
+/* QUOTE END */
+
+/* WEATHER START */
+
+.weather-icon__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+
+.weather-icon {
+  font-size: 1.5rem;
+  padding-right: 10px;
+}
+/* WEATHER END */

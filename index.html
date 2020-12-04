@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/owfont-regular.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>momentum</title>
+  </head>
+
+  <body>
+    <time class="time"></time>
+    <time class="date"></time>
+    <h1>
+      <span class="greeting"></span>
+      <span class="name" contenteditable="true"></span>
+    </h1>
+    <h2>What Is Your Focus For Today?</h2>
+    <h2 class="focus" contenteditable="true"></h2>
+    <button class="nextImgButton">Next image ></button>
+
+    <!-- QUOTE -->
+    <figure class="quote__text">
+      <blockquote></blockquote>
+      <figcaption></figcaption>
+      <button class="quote__btn">Next quote ></button>
+    </figure>
+
+    <!-- WEATHER -->
+    <div>
+      <div class="city" contenteditable="true"></div>
+      <div class="weather-icon__wrapper">
+        <i class="weather-icon owf"></i>
+        <span class="weather-description"></span>
+      </div>
+      <div class="temperature"></div>
+      <div class="humidity"></div>
+      <div class="pressure"></div>
+      <div><span class="wind_speed"></span> <span class="wind_deg"></span></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
